@@ -11,7 +11,7 @@ User story: I can see the number of servings, baking times -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Recipe page</title>
 </head>
 
 <body>
@@ -29,34 +29,44 @@ User story: I can see the number of servings, baking times -->
     <img class="header__img" src="photo1.png" alt="A Cheesecake Image">
 
   </header>
-  <section>
+  <main class="main">
+
     <Aside class="aside">
+      <!-- <div class="aside__div"> -->
       <header class="aside-header">
-        <section class="aside-header-section">
+        <section class="aside-header-section aside__flex-item">
           <i>cutlery</i>
-          <h5>Yields</h5>
+          <div class="aside__div-h5">
+          <h5 class="aside__h5-title">Yields</h5>
           <h5>12 servings</h5>
+          </div>
         </section>
       </header>
-      <ul class="time-aside__ul">
-        <li class="time-aside__li">
-          <i>clock</i>
-          <h5>PREP TIME</h5>
-          <h5>45 minutes</h5>
+      <ul class="time-aside">
+        <li class="time-aside__li aside__flex-item">
+          <img src="circle.svg">
+          <div class="aside__div-h5">
+            <h6 class="aside__h5-title">PREP TIME</h6>
+            <h5>45 minutes</h5>
+          </div>
         </li>
-        <li class="time-aside__li">
-          <i>clock</i>
-          <h5>COOK TIME</h5>
-          <h5>45 minutes</h5>
+        <li class="time-aside__li aside__flex-item">
+          <img src="circle.svg">
+          <div class="aside__div-h5">
+            <h5 class="aside__h5-title">COOK TIME</h5>
+            <h5>1 hour</h5>
+          </div>
         </li>
-        <li class="time-aside__li">
-          <i>clock</i>
-          <h5>TOTAL TIME</h5>
-          <h5>45 minutes</h5>
+        <li class="time-aside__li aside__flex-item">
+          <img src="circle.svg">
+          <div class="aside__div-h5">
+            <h5 class="aside__h5-title">TOTAL TIME</h5>
+            <h5>7,75 hours</h5>
+          </div>
         </li>
       </ul>
     </Aside>
-    <main class="main">
+    <section class="">
       <h2 class="main__h2">Ingredients</h2>
       <h5 class="main__h5">Graham Cracker Crust</h5>
       <section class="main__section">
@@ -118,9 +128,10 @@ User story: I can see the number of servings, baking times -->
           days.</li>
       </ol>
       <h5>Source: https://sallysbakingaddiction.com/classic-cheesecake/ </h5>
-    </main>
+    </section>
+  </main>
 </body>
 <footer></footer>
-</section>
+
 
 </html>
