@@ -1,0 +1,32 @@
+:root{
+    --fsize:calc(min(12px,100%) + 1vw);
+    --h1fsize:calc(min(16px,100%) + 1vw);
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: 3% 5%;
+}
+.header__h1{
+   font-size: var(--h1fsize);
+}
+.details-header__section{
+    font-size: var(--fsize);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;   
+    text-align: justify;
+}
+.details-header__section-img{
+    width: 7%;
+    padding-top: 4px;
+    padding-right: 10px;
+}
+.header__img{
+    object-fit: contain;
+    width: 100%;
+}
