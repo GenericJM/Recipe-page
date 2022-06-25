@@ -1,16 +1,26 @@
 :root {
-    --fsize: calc(min(12px, 100%) + 1vw);
-    --h1fsize: calc(min(16px, 100%) + 1vw);
-    --h5fsize: calc(min(8px, 100%) + 1vw);
-    --h5variantfsize: calc(min(8px, 100%) + 1vw);
+    --fsize: calc(min(0.5rem, 100%) + 1vw);
+    --pfsize: calc(min(1em, 100%) + 1vw);
+    --h1fsize: calc(min(1.5em, 100%) + 1vw);
+    --h5fsize: calc(min(1rem, 100%) + 1vw);
+    --h5variantfsize: calc(min(0.3em, 100%) + 1vw);
 }
-
 * {
     margin: 0;
     padding: 0;
     font-size: var(--fsize);
+    list-style: none;
 }
-
+.main__h2{
+    font-size: var(--h1fsize);
+}
+.main__h5{
+    /* margin-bottom: 2%; */
+    font-size: var(--h5fsize);
+    font-style: italic;
+    font-weight: 100;
+    color: #555;
+}
 body {
     margin: 3% 5%;
 }
@@ -20,7 +30,7 @@ body {
 }
 
 .details-header__section {
-    font-size: var(--fsize);
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,7 +38,9 @@ body {
     text-align: justify;
     margin: 5% 0;
 }
-
+.details-header__section-p{
+    font-size: var(--pfsize);
+}
 .details-header__section-img {
     width: 7%;
     padding-top: 4px;
@@ -62,7 +74,6 @@ body {
 .aside__h5-title {
     color: #aaa;
     font-size: var(--h5variantfsize);
-
 }
 
 .aside-header {
@@ -83,11 +94,7 @@ body {
 
 .aside__flex-item {
     display: flex;
-    list-style: none;
     align-items: center;
-    /* margin: 0 auto; */
-    /* width: 100%; */
-
 }
 
 .aside__div-h5 {
@@ -95,9 +102,28 @@ body {
 }
 
 .main__section {
+   
     flex-basis: 0;
     flex-grow: 999;
     min-width: 60%;
+}
+
+.main__section-ul{
+    
+    padding: 10px;
+}
+.main__section-flex{
+    font-size: var(--pfsize);
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 3% 0;
+}
+.main__section-checkbox{
+    
+    min-width:calc(0.5em + 1vw);
+    min-height:calc(0.5em + 1vw);
+   margin-right: 1.5%;
 }
 
 @media screen and (min-width: 700px) {
@@ -107,11 +133,14 @@ body {
         flex-direction: row-reverse;
         flex-wrap: wrap;
     }
-   
+    
     .aside {
         box-shadow: 0px 0px 10px 3px #ddd;
-        max-height: 100vh;
+        max-height: 65vh;
 
+    }
+    .main__h2{
+        margin: 4% 0;
     }
     .aside-header{
         flex: none;
