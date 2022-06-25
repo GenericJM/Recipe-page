@@ -130,6 +130,20 @@ body {
     text-align: justify;
     font-size: var(--pfsize);
 }
+.source{
+   font-size: var(--h5fsize);
+   text-align: center;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    padding: 1% 0;
+    width: 100%;
+    background-color: #ddd;
+   margin-top: 10px;
+    font-size: var(--h5fsize);
+   text-align: center;
+}
 @media screen and (min-width: 450px) {
     .main {
         display: flex;
@@ -140,8 +154,7 @@ body {
     
     .aside {
         box-shadow: 0px 0px 10px 3px #ddd;
-        max-height:30vw ;
-
+        max-height:30vw;
     }
     .main__h2{
         margin: 4% 0;
